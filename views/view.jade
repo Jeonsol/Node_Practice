@@ -1,0 +1,15 @@
+doctype html
+html
+    meta(charset="utf-8")
+    head
+        title Server Side JavaScript
+    body
+        ul
+            each topic in topics
+                li
+                    a(href="/topic/"+topic)= topic
+        article
+            h1= title
+            p= description
+
+        a(href="/topic/new") new
